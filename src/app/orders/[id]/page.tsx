@@ -1,6 +1,6 @@
 "use client";
 
-import { useParams, useRouter } from "next/navigation";
+import { useParams } from "next/navigation";
 import { useEffect, useState } from "react";
 import { formatPrice, formatDate } from "@/lib/utils/helpers";
 import { Order } from "@/lib/types";
@@ -8,7 +8,6 @@ import Link from "next/link";
 
 export default function OrderDetailPage() {
   const { id } = useParams();
-  const router = useRouter();
   const [order, setOrder] = useState<Order | null>(null);
   const [loading, setLoading] = useState(true);
 

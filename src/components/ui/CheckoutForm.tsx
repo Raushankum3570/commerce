@@ -16,9 +16,7 @@ export default function CheckoutForm({ onSubmit }: CheckoutFormProps) {
     postalCode: "",
     country: "",
   });
-
   const [paymentMethod, setPaymentMethod] = useState("credit-card");
-  const [formStep, setFormStep] = useState<'shipping' | 'payment'>('shipping');
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
