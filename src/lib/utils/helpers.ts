@@ -1,4 +1,4 @@
-import { CartItem } from "./types";
+import { CartItem } from "@/lib/types";
 
 /**
  * Format a price to currency string
